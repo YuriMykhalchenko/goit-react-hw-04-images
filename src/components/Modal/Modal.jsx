@@ -36,8 +36,8 @@ export function Modal({ largeImg, tags, onCloseByEscape }) {
 }
 
 Modal.propTypes = {
-  largeImg: PropTypes.string.isRequired,
-  tags: PropTypes.string.isRequired,
   onCloseByEscape: PropTypes.func,
   onCloseByClick: PropTypes.func,
+  largeImg: PropTypes.string.isRequired,
+  tags: PropTypes.string.isRequired,
 };

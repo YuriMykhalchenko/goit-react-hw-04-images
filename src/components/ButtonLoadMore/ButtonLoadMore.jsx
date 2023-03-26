@@ -14,7 +14,7 @@ export const ButtonLoadMore = ({ onLoadMore, page, totalPages }) => {
 };
 
 ButtonLoadMore.propTypes = {
+  onLoadMore: PropTypes.func,
   page: PropTypes.number.isRequired,
   totalPages: PropTypes.number.isRequired,
-  onLoadMore: PropTypes.func,
 };

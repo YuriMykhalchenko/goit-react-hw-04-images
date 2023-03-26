@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { GalleryItem, GalleryImage } from './ImageGalleryItem.styled';
 
-export const Item = ({ webformatURL, largeImageURL, tags, onSelected }) => {
+export const Item = ({ onSelected, webformatURL, largeImageURL, tags }) => {
   return (
     <GalleryItem>
       <GalleryImage
@@ -15,8 +15,8 @@ export const Item = ({ webformatURL, largeImageURL, tags, onSelected }) => {
 };
 
 Item.propTypes = {
+  onSelected: PropTypes.func,
   tags: PropTypes.string.isRequired,
   webformatURL: PropTypes.string.isRequired,
   largeImageURL: PropTypes.string.isRequired,
-  onSelected: PropTypes.func,
 };
